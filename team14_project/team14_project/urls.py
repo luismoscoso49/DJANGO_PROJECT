@@ -17,14 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('team14App/', include('team14App.urls')),
+    path('team14/', include('team14App.urls')),
     path('admin/', admin.site.urls),
 ]
 
-"""
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('bancoApp.urls')),
-]
-
-"""
+# http://127.0.0.1:8000/team14/index desde el browser
