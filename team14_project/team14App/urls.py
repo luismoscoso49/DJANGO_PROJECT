@@ -17,10 +17,12 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('index', views.index, name='index'),
     path('add', views.newMembers, name='newMembers'),
     path('read', views.getMembers, name='getMembers'),
 ]
+
+# http://127.0.0.1:8000/team14/index desde el browser
 
 """
 urlpatterns = [
