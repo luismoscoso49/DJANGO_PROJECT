@@ -18,8 +18,17 @@ from . import views
 
 urlpatterns = [
     path('index', views.index, name='index'),
-    path('add', views.newMembers, name='newMembers'),
-    path('read', views.getMembers, name='getMembers'),
+    path('newMedico', views.newMedico, name='newMedico'),
+    path('updateMedico/<int:nid_medico>',
+         views.updateMedico, name='updateMedico'),
+    path('deleteMedico/<int:nid_medico>',
+         views.deleteMedico, name='deleteMedico'),
+    path('medicos', views.getAllMedicos, name='getAllMedicos'),
+    path('getMedico/<int:nid_medico>', views.getMedico, name='getMedico'),
+    path('pacientesxmedico/<int:nid_medico>', views.pacientesxmedico, name='pacientesxmedico'),
+    path('newHistoria', views.newHistoria, name='newHistoria'),
+    path('updateHistoria/<int:nid_paciente>',
+         views.updateHistoria, name='updateHistoria'),
 ]
 
 # http://127.0.0.1:8000/team14/index desde el browser
