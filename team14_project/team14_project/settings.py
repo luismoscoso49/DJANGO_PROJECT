@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'team14_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'de2hpb3vl8hqgp',
+        'USER': 'kpwfyfbadvhfpc',
+        'PASSWORD': 'e1023a25bbfae3129be3baa30c24706ee5c584bbac6cc3f38b91ac5c56f4dab8',
+        'HOST': 'ec2-44-195-132-31.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 #     sqllite3
 #     'default': {
