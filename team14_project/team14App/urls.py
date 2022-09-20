@@ -44,11 +44,3 @@ urlpatterns = [
 
 # http://127.0.0.1:8000/team14/index desde el browser
 
-"""
-urlpatterns = [
-    path('home', views.home, name='Home'),
-    path('newCustomer', views.newCustomer, name='newCustomer'),
-    path('getAllCustomers', views.getAllCustomers, name='getAllCustomers'),
-    path('getOneCustomer/<int:id>', views.getOneCustomer, name='getOneCustomer'),
-]
-"""

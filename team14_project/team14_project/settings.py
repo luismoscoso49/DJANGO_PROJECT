@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'team14_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de2hpb3vl8hqgp',
-        'USER': 'kpwfyfbadvhfpc',
-        'PASSWORD': 'e1023a25bbfae3129be3baa30c24706ee5c584bbac6cc3f38b91ac5c56f4dab8',
-        'HOST': 'ec2-44-195-132-31.compute-1.amazonaws.com',
+        'NAME': 'd6rhpmtnh35b1j',
+        'USER': 'anyuchzdetrual',
+        'PASSWORD': '4158094139c916526440a5607b3f2aae5551eed4d75902b54b3cd0258002c262',
+        'HOST': 'ec2-52-207-90-231.compute-1.amazonaws.com',
         'PORT': '5432'
     }
 #     sqllite3
@@ -132,5 +132,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+#Solo para HEROKU
 import django_heroku
 django_heroku.settings(locals())

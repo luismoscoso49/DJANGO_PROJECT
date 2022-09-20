@@ -1,5 +1,5 @@
 from sqlite3 import DataError
-from tkinter import CASCADE
+from django.db.models.deletion import CASCADE
 from django.db import models
 from datetime import date, datetime
 
@@ -53,4 +53,5 @@ class Historia_Signos (models.Model):
     id_signo=models.ForeignKey(Signos_Vitales, on_delete = models.CASCADE, blank = True, null = True)
     fecha = models.CharField(max_length=50)
     valor_signo = models.DecimalField(max_digits=20, decimal_places=2, default=0)
+
 
