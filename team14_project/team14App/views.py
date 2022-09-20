@@ -1,7 +1,7 @@
-from asyncio.windows_events import NULL
+#from asyncio.windows_events import NULL
 from ctypes.wintypes import CHAR
 import json
-from tkinter.tix import INTEGER
+#from tkinter.tix import INTEGER
 from unicodedata import numeric
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseBadRequest, HttpResponseNotAllowed
